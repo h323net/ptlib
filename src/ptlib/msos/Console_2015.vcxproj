@@ -179,8 +179,7 @@
       <BrowseInformation>true</BrowseInformation>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <DisableSpecificWarnings>
-      </DisableSpecificWarnings>
+      <DisableSpecificWarnings>4456;4457;4458;4459;4996</DisableSpecificWarnings>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -207,8 +206,7 @@
       <PrecompiledHeaderFile>ptlib.h</PrecompiledHeaderFile>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableSpecificWarnings>
-      </DisableSpecificWarnings>
+      <DisableSpecificWarnings>4456;4457;4458;4459;4996</DisableSpecificWarnings>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -249,6 +247,7 @@
       <StringPooling>
       </StringPooling>
       <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4456;4457;4458;4459;4996</DisableSpecificWarnings>
     </ClCompile>
     <ResourceCompile>
       <Culture>0x0c09</Culture>
@@ -276,6 +275,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OpenMPSupport>true</OpenMPSupport>
       <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <DisableSpecificWarnings>4456;4457;4458;4459;4996</DisableSpecificWarnings>
     </ClCompile>
     <ResourceCompile>
       <Culture>0x0c09</Culture>
