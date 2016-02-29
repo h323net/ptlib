@@ -421,7 +421,7 @@ void PSTUNMessage::SetErrorType(int code, const BYTE * id, const char * reason)
 
 PSTUNMessage::MsgType PSTUNMessage::GetType() const
 {
-  if (GetSize() < sizeof(PSTUNMessageHeader))
+  if ((unsigned)GetSize() < sizeof(PSTUNMessageHeader))
     return InvalidMessage;
 
   return (PSTUNMessage::MsgType)(int)(*this)->msgType;
@@ -430,7 +430,7 @@ PSTUNMessage::MsgType PSTUNMessage::GetType() const
 
 bool PSTUNMessage::IsRFC5389() const
 {
-  if (GetSize() < sizeof(PSTUNMessageHeader))
+  if ((unsigned)GetSize() < sizeof(PSTUNMessageHeader))
     return false;
 
   return *(PUInt32b *)&((*this)->transactionId) == RFC5389_MAGIC_COOKIE;

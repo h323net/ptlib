@@ -42,6 +42,12 @@
 #include <ptclib/random.h>
 #include <ptclib/url.h>
 
+//## _LIBPLUS
+#if defined(P_ANDROID)
+#include <android_resolv.h>
+#endif
+//## _LIBPLUS
+
 #if defined(_WIN32)
 
   #include <windns.h>
