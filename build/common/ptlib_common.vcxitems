@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{45d41acc-2c3c-43d2-bc10-02aa73ffc7c7}</ItemsProjectGuid>
+    <ItemsProjectName>PTLib Common</ItemsProjectName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\asnber.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\asner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\asnper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\asnxer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\cli.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\cypher.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\delaychan.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\dtmf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\enum.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\ftp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\gstreamer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\html.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\http.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\httpform.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\httpsvc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\inetmail.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\inetprot.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\ipacl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\jscript.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\lua.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\memfile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\mime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\modem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pasn.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pdns.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pffvdev.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pldap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pnat.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\podbc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\psasl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\psnmp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\psoap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\psockbun.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pssl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pstun.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\ptts.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pvfiledev.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pvidfile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pwavfile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pwavfiledev.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pxml.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pxmlrpc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\pxmlrpcs.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\qchannel.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\random.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\rfc1155.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\script.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\shttpsvc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\snmp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\socks.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\ssdp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\telnet.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\threadpool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\url.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\vartype.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\vcard.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\vsdl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\vxml.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\xmpp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\xmpp_c2s.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\xmpp_muc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptclib\xmpp_roster.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Args.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Array.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\bitwise_enum.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Channel.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Config.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Contain.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\critsec.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Dict.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Dynalink.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Ethsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\File.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\filepath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Icmpsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\id_generator.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Indchan.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Ipdsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\ipsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\ipxsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Lists.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Mail.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\msos\ptlib\config.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\msos\ptlib\sfile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\msos\ptlib\tcpsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\mutex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\notifier.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\notifier_ext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\object.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Pdirect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\pfactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Pipechan.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\plugin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\pluginmgr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\pprocess.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Pstring.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\psync.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Ptime.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Remconn.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\safecoll.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\semaphor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Serchan.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Sfile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\socket.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\sockets.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Sound.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\spxsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Svcproc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\syncpoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\syncthrd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\syslog.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Tcpsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Textfile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\thread.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Timeint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Timer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\Include\PtLib\Udpsock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\vconvert.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\videoio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\contain.inl" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\msos\ptlib\ptlib.inl" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\include\ptlib\osutil.inl" />
+    <CustomBuild Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\getdate.y">
+      <FileType>Document</FileType>
+      <Command>bison -o ../common/getdate_tab.c ../common/getdate.y
+</Command>
+      <Outputs>../common/getdate_tab.c;%(Outputs)</Outputs>
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\asnber.cxx">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\asner.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\asnper.cxx">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\asnxer.cxx">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\cli.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\cypher.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\delaychan.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\dtmf.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\enum.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\ftp.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\ftpclnt.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\ftpsrvr.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\gstreamer.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\guid.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\html.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\http.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\httpclnt.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\httpform.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\httpsrvr.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\httpsvc.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\inetmail.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\inetprot.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\ipacl.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\jscript.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\lua.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\memfile.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\modem.cxx">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pasn.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pdns.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pffvdev.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pils.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pldap.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pnat.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\podbc.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\psasl.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\psnmp.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\psoap.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\psockbun.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pssl.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pstun.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pstunsrvr.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\ptts.cxx">
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pvfiledev.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pvidfile.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pwavfile.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pwavfiledev.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pxml.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pxmlrpc.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\pxmlrpcs.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\qchannel.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\random.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\rfc1155.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\script.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\shttpsvc.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\snmp.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\snmpclnt.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\snmpserv.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\socks.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\ssdp.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\telnet.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\threadpool.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\tonedev.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\url.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\vartype.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\vcard.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\vsdl.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\vxml.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\xmpp.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\xmpp_c2s.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\xmpp_muc.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptclib\xmpp_roster.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\collect.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\contain.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\getdate.c">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\jidctflt.cxx">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DisableSpecificWarnings>4324</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\notifier_ext.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\object.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\osutils.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\Common\pchannel.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\Common\pconfig.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\pethsock.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\pipechan.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\pluginmgr.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\ptime.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\pvidchan.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\regex\regcomp.c">
+      <AdditionalIncludeDirectories>..\common\regex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\regex\regerror.c">
+      <AdditionalIncludeDirectories>..\common\regex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\regex\regexec.c">
+      <AdditionalIncludeDirectories>..\common\regex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\regex\regfree.c">
+      <AdditionalIncludeDirectories>..\common\regex;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\safecoll.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\Common\serial.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\sockets.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\sound.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\syslog.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\tinyjpeg.cxx">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <DisableSpecificWarnings>4324</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\vconvert.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\vfakeio.cxx" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\videoio.cxx" />
+    <CustomBuild Include="$(MSBuildThisFileDirectory)..\..\src\ptlib\common\getdate.tab.c">
+      <Command>copy "%(FullPath)" "%(RootDir)%(Directory)getdate.c"</Command>
+      <Message>Using default getdate bison file.</Message>
+      <Outputs>%(RootDir)%(Directory)getdate.c;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Android">
+      <UniqueIdentifier>{298a9546-83ce-423b-a661-33b6f1e3a06d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android\header">
+      <UniqueIdentifier>{284f1fe2-51d8-4219-9edd-fa7c87d1e3ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\channel.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\config.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\critsec.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\dynalink.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\ethsock.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\file.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\filepath.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\icmpsock.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\ipdsock.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\ipsock.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\mail.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\mutex.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\pdirect.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\pipechan.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\platform.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\pprocess.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\ptime.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\Android\include\ptlib_config.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\remconn.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\resampler.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\semaphor.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\serchan.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\socket.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\svcproc.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\syncpoint.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\tcpsock.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\textfile.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\thread.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\timeint.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\timer.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\udpsock.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\video.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\lib\ARM\include\ptlib_config.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="android_resolv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\include\ptlib\unix\ptlib\ptlib.inl">
+      <Filter>Android\header</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\include\ptlib_config.h.in">
+      <Filter>Android</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ptlib\msos\assert.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\directshow.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\directsound.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\icmp.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\mail.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\pipe.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\ptlib.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\remconn.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\sound_win32.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\svcproc.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\vfw.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\vidinput_app.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\win32.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\wincfg.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\winserial.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\msos\winsock.cxx">
+      <Filter>MSOS\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\configure.ac" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MSOS">
+      <UniqueIdentifier>{c25031fa-913b-44fe-91a8-6e10881aacc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MSOS\src">
+      <UniqueIdentifier>{bb5aa945-7eaf-477d-ba7d-19a1b59f1e52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MSOS\header">
+      <UniqueIdentifier>{8908bdde-fd86-4fea-8576-396d563fd700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MSOS\Win32">
+      <UniqueIdentifier>{f437cb42-2513-4900-a6e7-a9ee0642de11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MSOS\Win64">
+      <UniqueIdentifier>{e47be3c3-826d-4daa-9895-a2269f9baf08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\channel.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\critsec.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\debstrm.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\directsound.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\dynalink.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\epacket.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\ethsock.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\file.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\filepath.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\icmpsock.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\ipdsock.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\ipsock.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\ipxsock.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\mail.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\mutex.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\pdirect.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\pipechan.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\platform.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\pprocess.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\ptime.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\pt_atl.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\remconn.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\semaphor.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\serchan.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\socket.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\spxsock.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\svcproc.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\syncpoint.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\textfile.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\thread.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\timeint.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\timer.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\udpsock.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\msos\ptlib\videoio.h">
+      <Filter>MSOS\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\Win32\include\ptlib_config.h">
+      <Filter>MSOS\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\version.h">
+      <Filter>MSOS\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Lib\x64\include\ptlib_config.h">
+      <Filter>MSOS\Win64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\revision.h">
+      <Filter>MSOS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\include\ptlib_config.h.in">
+      <Filter>MSOS</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\revision.h.in">
+      <Filter>MSOS</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
