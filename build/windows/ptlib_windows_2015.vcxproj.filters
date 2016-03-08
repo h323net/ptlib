@@ -176,13 +176,13 @@
     <ClInclude Include="..\..\Lib\Win32\include\ptlib_config.h">
       <Filter>MSOS\Win32</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\version.h">
-      <Filter>MSOS\Win32</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Lib\x64\include\ptlib_config.h">
       <Filter>MSOS\Win64</Filter>
     </ClInclude>
     <ClInclude Include="..\..\revision.h">
+      <Filter>MSOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\version.h">
       <Filter>MSOS</Filter>
     </ClInclude>
   </ItemGroup>
