@@ -18,7 +18,8 @@
 *
 */
 
-#pragma once
+#ifndef _ANDROID_RESOLV
+#define _ANDROID_RESOLV 1
 
 #if defined(P_ANDROID)
 // Add missing Android resolve headers
@@ -96,12 +97,13 @@ typedef struct {
 } while (0)
 #define GETLONG   NS_GET32
 
-int dn_expand(const unsigned char * srv, const unsigned char * end, const unsigned char * pos, char * name, const unsigned int n);
+extern int dn_expand(const u_char *msg, const u_char *eom, const u_char *src, char *dst, int dstsiz);
 
-int res_init(void);
+extern int res_init(void);
 
-int res_search(const char * dname, int classx, int type, u_char *answer, int anslen);
-
+extern int res_search(const char * dname, int classx, int type, u_char *answer, int anslen);
 
 #endif  // P_ANDROID
+
+#endif  // _ANDROID_RESOLV
 

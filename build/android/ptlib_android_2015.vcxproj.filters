@@ -7,6 +7,9 @@
     <Filter Include="Android\header">
       <UniqueIdentifier>{284f1fe2-51d8-4219-9edd-fa7c87d1e3ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Android\source">
+      <UniqueIdentifier>{d3d8f4cb-74a4-4af2-9077-511312e72dc4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\ptlib\unix\ptlib\channel.h">
@@ -46,9 +49,6 @@
       <Filter>Android\header</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\ptlib\unix\ptlib\pdirect.h">
-      <Filter>Android\header</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\ptlib\unix\ptlib\pipechan.h">
       <Filter>Android\header</Filter>
     </ClInclude>
     <ClInclude Include="..\..\include\ptlib\unix\ptlib\platform.h">
@@ -109,6 +109,15 @@
       <Filter>Android</Filter>
     </ClInclude>
     <ClInclude Include="android_resolv.h" />
+    <ClInclude Include="..\..\src\ptlib\unix\uerror.h">
+      <Filter>Android\source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\ptlib\unix\ptlib\pipechan.h">
+      <Filter>Android\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ptlib\unix\opensles_wrap.hpp">
+      <Filter>Android\source</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\include\ptlib\unix\ptlib\ptlib.inl">
@@ -119,5 +128,41 @@
     <CustomBuild Include="..\..\include\ptlib_config.h.in">
       <Filter>Android</Filter>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ptlib\unix\assert.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\channel.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\config.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\opensl_es.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\osutil.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\serchan.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\socket.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\svcproc.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\tlib.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\udll.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\uicmp.cxx">
+      <Filter>Android\source</Filter>
+    </ClCompile>
+    <ClCompile Include="android_resolv.c" />
   </ItemGroup>
 </Project>

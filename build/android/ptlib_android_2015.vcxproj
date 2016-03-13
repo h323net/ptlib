@@ -68,6 +68,10 @@
     <ClInclude Include="..\..\include\ptlib\unix\ptlib\video.h" />
     <ClInclude Include="..\..\Lib\Android\include\ptlib_config.h" />
     <ClInclude Include="..\..\lib\ARM\include\ptlib_config.h" />
+    <ClInclude Include="..\..\src\ptlib\unix\opensles_wrap.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ptlib\unix\uerror.h" />
     <ClInclude Include="android_resolv.h" />
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +121,26 @@ configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)/" --no-searc
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x86'">$(ProjectDir)..\..\Lib\$(Platform)\include\ptlib_config.h</Outputs>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ptlib\unix\assert.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\channel.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\config.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\opensl_es.cxx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\osutil.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\serchan.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\socket.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\svcproc.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\tlib.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\udll.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\uicmp.cxx" />
+    <ClCompile Include="android_resolv.c">
+      <RuntimeTypeInfo Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</RuntimeTypeInfo>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">NotUsing</PrecompiledHeader>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{e7771251-ae3a-4060-a642-27ebfd2ea297}</ProjectGuid>
     <Keyword>Android</Keyword>
@@ -131,41 +155,49 @@ configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)/" --no-searc
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>Gcc_4_9</PlatformToolset>
+    <AndroidAPILevel>android-19</AndroidAPILevel>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
@@ -244,7 +276,7 @@ configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)/" --no-searc
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>$(ProjectDir)..\..\include\ptlib.h</PrecompiledHeaderFile>
-      <PreprocessorDefinitions>PTRACING=2;_DEBUG=1</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PTRACING=2;_DEBUG=1;</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFileDirectory>$(VS_PCH_DIR)$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFileDirectory>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>

@@ -705,7 +705,7 @@
 //
 
 #ifndef _WIN32_WCE
-  #define P_DNS_RESOLVER	1
+  #undef P_DNS_RESOLVER
   #undef P_HAS_RES_NINIT
 #endif
 
