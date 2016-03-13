@@ -616,7 +616,7 @@ class PSoundChannel_OpenSL_ES : public PSoundChannel
 
     virtual PBoolean SetBuffers(PINDEX size, PINDEX count)
     {
-      if (size ==  m_buffers[0].size() && count == m_queue.GetSize()/size)
+      if (size ==  (PINDEX)m_buffers[0].size() && count == m_queue.GetSize()/size)
         return true;
 
       if (!PAssert(size > 80 && count > 1, PInvalidParameter))
