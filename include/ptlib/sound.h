@@ -761,7 +761,7 @@ PPLUGIN_STATIC_LOAD(NullAudio, PSoundChannel)
   #define P_WINDOWS_MULTIMEDIA_DRIVER "WindowsMultimedia"
   PPLUGIN_STATIC_LOAD(WindowsMultimedia, PSoundChannel);
 #elif defined(P_ANDROID)
-  PPLUGIN_STATIC_LOAD(OpenSL_ES, PSoundChannel);
+//  PPLUGIN_STATIC_LOAD(OpenSL_ES, PSoundChannel);
 #elif defined(P_MACOSX) || defined(P_IOS)
   PPLUGIN_STATIC_LOAD(Apple, PSoundChannel);
 #elif defined(__BEOS__)
