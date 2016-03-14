@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\include\ptlib_config.h.in">
+      <FileType>Document</FileType>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Configuring Build Options</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Configuring Build Options</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Configuring Build Options</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">Configuring Build Options</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Configuring Build Options</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Configuring Build Options</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Configuring Build Options</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x86'">Configuring Build Options</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x86'">cd $(ProjectDir)..\..
+configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)_iOS/" --no-search --enable-ios=iphone --disable-byteorder --disable-wstream --disable-sasl --disable-openldap --disable-openssl --disable-openssl64 --disable-expat --disable-expat32 --disable-lua --disable-atl --disable-sapi --disable-remconn --disable-serial --disable-qos --disable-ffvdev --disable-appshare --disable-libsdl --disable-dsound --disable-dshow --disable-odbc --disable-gstreamer --disable-pcap --disable-lua --disable-v8 --disable-libjpeg</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x86'">$(ProjectDir)..\..\configure.ac</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x86'">$(ProjectDir)..\..\lib\$(Platform)_iOS\include\ptlib_config.h</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\lib\ARM_iOS\include\ptlib_config.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{112dff98-6c54-4bea-ad11-218c38203b9e}</ProjectGuid>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <Keyword>iOS</Keyword>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>iOS</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <ProjectName>PTLib iOS</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>XCode_6_1</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libptsd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libpts</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libptsd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libpts</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libptsd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libpts</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libptsd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>$(ProjectDir);$(ProjectDir)..\..\lib\$(Platform)_iOS\include;$(ProjectDir)..\..\include;$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\include;$(ISenseIncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\..\lib\$(Platform)_iOS\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)\</IntDir>
+    <TargetName>libpts</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
