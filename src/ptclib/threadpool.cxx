@@ -160,7 +160,7 @@ void PThreadPoolBase::StopWorker(WorkerThreadBase * worker)
   worker->Shutdown();
 
   // the worker is now finished
-  if (!worker->WaitForTermination(10000)) {
+  if (!worker->WaitForTermination(1000)) {
     PTRACE(4, "ThreadPool\tWorker did not terminate promptly");
   }
 
