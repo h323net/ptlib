@@ -448,7 +448,7 @@ bool PVideoInputDevice_DirectShow::GetDeviceCapabilities(Capabilities * caps) co
 
   // Sort so we have unique sizes from largest to smallest
   for (std::set<PVideoFrameInfo, std::greater<PVideoFrameInfo> >::iterator it = fsizes.begin(); it != fsizes.end(); ++it) {
-    PTRACE(5, "Format["<< caps->framesizes.size() << "] = " << *it);
+    PTRACE(7, "Format["<< caps->framesizes.size() << "] = " << *it);
     caps->framesizes.push_back(*it);
   }
 
@@ -541,7 +541,7 @@ bool PVideoInputDevice_DirectShow::SetPinFormat(unsigned useDefaultColourOrSize)
       return true;
     }
     else {
-      PTRACE(6, "Tested format: "
+      PTRACE(7, "Tested format: "
              << GUID2Format(pMediaFormat->subtype) << ' '
              << scc.MinOutputSize.cx << 'x' << scc.MinOutputSize.cy
              << ".."
@@ -1312,7 +1312,7 @@ STDMETHODIMP PSampleGrabberCB::QueryInterface(REFIID riid, void ** ppv)
 //
 STDMETHODIMP PSampleGrabberCB::BufferCB(double PTRACE_PARAM(dblSampleTime), BYTE * buffer, long size)
 {
-  PTRACE(6, "Buffer callback: time=" << dblSampleTime
+  PTRACE(7, "Buffer callback: time=" << dblSampleTime
           << ", buf=" << (void *)buffer << ", size=" << size);
 
   if (size == 0 || m_stopped)
