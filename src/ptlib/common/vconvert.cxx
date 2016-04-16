@@ -226,6 +226,18 @@ PColourConverterRegistration::PColourConverterRegistration(const PString & srcCo
   RegisteredColourConvertersListHead = this;
 }
 
+//## _LIBPLUS
+PStringArray PColourConverterRegistration::GetColourConvertersList()
+{
+    PStringArray list;
+    PColourConverterRegistration * test = RegisteredColourConvertersListHead;
+    while (test != NULL) {
+        list.AppendString(*test);
+        test = test->link;
+    }
+    return list;
+}
+//## _LIBPLUS
 
 PColourConverter * PColourConverter::Create(const PVideoFrameInfo & src,
                                             const PVideoFrameInfo & dst)

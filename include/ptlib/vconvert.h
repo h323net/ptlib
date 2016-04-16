@@ -60,6 +60,10 @@ class PColourConverterRegistration : public PCaselessString
       const PString & destColourFormat  ///< Name of destination colour format
     );
 
+//## _LIBPLUS
+    static PStringArray GetColourConvertersList();
+//## _LIBPLUS
+
   protected:
     virtual PColourConverter * Create(
       const PVideoFrameInfo & src, ///< Source frame info (colour formet, size etc)
