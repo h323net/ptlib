@@ -7,6 +7,9 @@
     <Filter Include="Android\header">
       <UniqueIdentifier>{284f1fe2-51d8-4219-9edd-fa7c87d1e3ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Android\src">
+      <UniqueIdentifier>{54dc20d4-442d-4928-a846-7e67ac894ea0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\ptlib\unix\ptlib\channel.h">
@@ -119,5 +122,40 @@
     <CustomBuild Include="..\..\include\ptlib_config.h.in">
       <Filter>Android</Filter>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ptlib\unix\assert.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\channel.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\config.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\osutil.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\serchan.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\socket.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\svcproc.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\tlib.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\tlibthrd.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\udll.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\opensl_es.cxx">
+      <Filter>Android\src</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -595,7 +595,11 @@ static PString SuccessfulTestResult(std::vector<int64_t> & times, PSoundChannel 
   text << ", " << channel.GetSampleRate() << "Hz, " << count << 'x' << size << " byte buffers\n"
           "Expected=" << std::fixed << std::setprecision(2) << (size/2*1000/channel.GetSampleRate()) << "ms, "
           "average=" << average << "ms, "
+#if !defined(P_ANDROID)
           "deviation=" << sqrt(variance) << "ms";
+#else
+           ;
+#endif
   PTRACE(3, "Sound", text);
   return text;
 }

@@ -704,8 +704,8 @@
 // DNS resolver
 //
 
-#ifndef _WIN32_WCE
-  #undef P_DNS_RESOLVER 
+#if !defined(_WIN32_WCE) && !defined(P_ANDROID)
+  #define P_DNS_RESOLVER	1
   #undef P_HAS_RES_NINIT
 #endif
 
@@ -851,7 +851,7 @@
     #else // _WIN32_WCE
 
       #define P_VFW_CAPTURE 1
-      #undef P_DIRECTSHOW
+      #define P_DIRECTSHOW	1
        #if WINVER < 0x502
           #undef P_DIRECTSHOW_QEDIT_H
        #endif

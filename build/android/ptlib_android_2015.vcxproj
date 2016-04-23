@@ -117,6 +117,25 @@ configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)/" --no-searc
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x86'">$(ProjectDir)..\..\Lib\$(Platform)\include\ptlib_config.h</Outputs>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ptlib\unix\assert.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\channel.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\config.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\opensl_es.cxx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\osutil.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\serchan.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\socket.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\svcproc.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\tlib.cxx" />
+    <ClCompile Include="..\..\src\ptlib\unix\tlibthrd.cxx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ptlib\unix\udll.cxx" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{e7771251-ae3a-4060-a642-27ebfd2ea297}</ProjectGuid>
     <Keyword>Android</Keyword>
@@ -253,7 +272,7 @@ configure "-Dac_top_build_prefix=$(ProjectDir)../../lib/$(Platform)/" --no-searc
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>$(ProjectDir)..\..\include\ptlib.h</PrecompiledHeaderFile>
-      <PreprocessorDefinitions>PTRACING=2;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>PTRACING=2;NDEBUG=1</PreprocessorDefinitions>
       <PrecompiledHeaderOutputFileDirectory>$(IntDir)</PrecompiledHeaderOutputFileDirectory>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
