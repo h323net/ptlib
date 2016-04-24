@@ -700,6 +700,9 @@ PBoolean PVideoInputDevice_DirectShow::Stop()
 
 PBoolean PVideoInputDevice_DirectShow::IsCapturing()
 {
+  if (!m_pMediaControl)
+    return false;
+
   OAFilterState state;
   PCOM_RETURN_ON_FAILED(m_pMediaControl->GetState,(0, &state));
   return state != State_Stopped;
