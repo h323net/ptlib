@@ -964,14 +964,16 @@ void * operator new[](size_t nSize)
   return malloc(nSize);
 }
 
+// SH - delete[](void * ptr) is defined in msvcrt.lib for release builds on windows
 #if (__GNUC__ >= 3) || ((__GNUC__ == 2)&&(__GNUC_MINOR__ >= 95)) //2.95.X & 3.X
 void operator delete[](void * ptr) throw ()
-#else
-void operator delete[](void * ptr)
-#endif
+//#else
+//void operator delete[](void * ptr)
+//#endif
 {
   free(ptr);
 }
+#endif
 
 #endif // !P_VXWORKS
 
